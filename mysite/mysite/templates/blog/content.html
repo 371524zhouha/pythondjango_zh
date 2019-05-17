@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block title %}blog titles{% endblock %}
+{% block content %}
+
+<div class="row text_center vertical_middle-sm">
+    <h1>{{article.title}}</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+        <p class="text-center"><span>{{article.author.username}}</span>
+        <span style="margin-left:20px">{{publish}}</span></p>
+        <div>{{article.body}}</div>
+    </div>
+    <div class="col-xs-6 col-md-4">
+        <h2>广告</h2>
+        <p>跟老子学: www,itdiffer.com</p>
+        <img  width="200px" src="http://p1.pstatp.com/large/pgc-image/719c8c028eef4db1bf54e8173de73b63">
+    </div>
+</div>
+{% endblock %}
